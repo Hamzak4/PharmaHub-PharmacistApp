@@ -1,0 +1,111 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/g_card_background">
+
+<com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Customer Complaints"
+        app:titleCentered="false"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+</com.google.android.material.appbar.AppBarLayout>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+android:id="@+id/swipeRefresh"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/complaintsRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingBottom="16dp"
+    android:paddingTop="8dp"
+    android:scrollbars="vertical"
+    tools:listitem="@layout/item_complaint" />
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Empty state with better styling -->
+<LinearLayout
+android:id="@+id/emptyStateLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:orientation="vertical"
+android:padding="32dp"
+android:visibility="gone"
+app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:alpha="0.8"
+    android:contentDescription="@string/no_complaints"
+    android:src="@drawable/ic_empty_box" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:text="No complaints yet"
+    android:textColor="@color/colorPrimary"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:gravity="center"
+    android:lineSpacingExtra="4dp"
+    android:text="When customers submit complaints, they will appear here for your review"
+    android:textColor="@color/colorPrimaryDark"
+    android:textSize="16sp" />
+</LinearLayout>
+
+    <!-- Loading indicator with better positioning -->
+<FrameLayout
+android:id="@+id/loadingContainer"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#80FFFFFF"
+android:visibility="gone"
+app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<com.google.android.material.progressindicator.CircularProgressIndicator
+    android:id="@+id/progressBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:indeterminate="true"
+    app:indicatorColor="@color/colorPrimary"
+    app:indicatorSize="48dp"
+    app:trackThickness="4dp" />
+</FrameLayout>
+
+    <!-- Add FAB for potential new actions -->
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+android:id="@+id/fabFilter"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="bottom|end"
+android:layout_margin="16dp"
+android:contentDescription="Filter complaints"
+app:srcCompat="@drawable/ic_filter"
+app:tint="@color/white" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

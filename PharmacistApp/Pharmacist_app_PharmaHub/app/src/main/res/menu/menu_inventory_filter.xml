@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filter_all"
+        android:title="All Medicines" />
+    <item
+        android:id="@+id/filter_low_stock"
+        android:title="Low Stock" />
+    <item
+        android:id="@+id/filter_out_of_stock"
+        android:title="Out of Stock" />
+    <item
+        android:id="@+id/filter_by_category"
+        android:title="Filter by Category" />
+    <item
+        android:id="@+id/filter_prescription_only"
+        android:title="Prescription Only" />
+    <item
+        android:id="@+id/filter_recently_added"
+        android:title="Recently Added" />
+</menu>

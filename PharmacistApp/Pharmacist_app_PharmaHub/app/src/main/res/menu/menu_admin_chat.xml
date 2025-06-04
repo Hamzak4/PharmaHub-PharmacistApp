@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_resolve"
+        android:title="Resolve Chat"
+        android:icon="@drawable/check"/>
+    <item
+        android:id="@+id/action_close"
+        android:title="Close"/>
+</menu>

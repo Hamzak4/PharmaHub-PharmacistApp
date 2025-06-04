@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+    <color name="orange">#FF9800</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="cyan_color">#00BCD4</color>
+    <color name="cyan_light">#E0F7FA</color>
+    <color name="background_light">#F5F5F5</color>
+    <color name="drawer_item_text_color">#333333</color>
+    <color name="status_ordered_bg">#FFF3E0</color>     <!-- Light Orange -->
+    <color name="status_confirmed_bg">#E3F2FD</color>   <!-- Light Blue -->
+    <color name="status_processing_bg">#F3E5F5</color>  <!-- Light Purple -->
+    <color name="status_shipped_bg">#E0F7FA</color>     <!-- Light Cyan -->
+    <color name="status_delivered_bg">#E8F5E9</color>   <!-- Light Green -->
+    <color name="status_cancelled_bg">#FFEBEE</color>
+    <color name="status_ordered">#FF9800</color>        <!-- Orange -->
+    <color name="status_confirmed">#2196F3</color>      <!-- Blue -->
+    <color name="status_cancelled">#F44336</color>
+    <color name="status_approved">#4CAF50</color>
+    <color name="md_light_on_surface">#1F1F1F</color>
+    <color name="shimmer_background">#E0E0E0</color>
+    <color name="shimmer_highlight">#FAFAFA</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="status_rejected">#F44336</color>
+    <color name="status_default">#9E9E9E</color>
+    <color name="card_stroke">#E0E0E0</color>
+    <color name="status_indicator_pending">#FFA000</color>
+    <color name="status_indicator_approved">#4CAF50</color>
+    <color name="status_indicator_rejected">#F44336</color>
+
+
+    <!-- Additional colors -->
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorText">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorTextDisabled">#9E9E9E</color>
+    <color name="colorDivider">#E0E0E0</color>
+
+    <!-- Status colors -->
+    <color name="colorSuccess">#4CAF50</color>
+    <color name="colorWarning">#FF9800</color>
+    <color name="colorError">#F44336</color>
+    <color name="colorInfo">#2196F3</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_tertiary">#9E9E9E</color>
+
+    <!-- Background colors -->
+    <color name="bg_light_gray">#F5F5F5</color>
+    <color name="dark_gray">#424242</color>
+    <!-- Status Colors -->
+    <color name="status_pending">#FFA000</color>
+    <color name="message_user_background">#EEEEEE</color>
+    <color name="status_pending_light">#FFF3E0</color>
+    <color name="status_processing">#2196F3</color>
+    <color name="status_processing_light">#E3F2FD</color>
+    <color name="status_shipped">#673AB7</color>
+    <color name="status_shipped_light">#EDE7F6</color>
+    <color name="status_delivered">#4CAF50</color>
+    <color name="status_delivered_light">#E8F5E9</color>
+    <color name="status_unknown">#9E9E9E</color>
+    <color name="status_unknown_light">#FAFAFA</color>
+
+    <!-- Primary color palette -->
+    <color name="primary_color">#6200EE</color> <!-- Material Purple 600 -->
+    <color name="primary_dark">#3700B3</color>
+    <color name="primary_light">#BB86FC</color>
+
+    <color name="error_color">#F44336</color>
+
+    <!-- Secondary colors -->
+    <color name="secondary_color">#03DAC6</color>
+    <color name="secondary_dark">#018786</color>
+
+    <!-- Background/Text colors -->
+    <color name="light_gray">#FAFAFA</color>
+    <color name="secondary_text_color">#757575</color>
+
+        <color name="gray_800">#424242</color>
+
+        <color name="primaryColor">#6200EE</color>
+        <color name="primaryDarkColor">#3700B3</color>
+
+        <color name="g_gray700">#666666</color>
+        <color name="g_black">#171717</color>
+        <color name="g_blue">#000DAE</color>
+        <color name="g_white">#F5F8FA</color>
+        <color name="g_dark_blue">#000759</color>
+        <color name="g_blue_gray200">#97AABD</color>
+        <color name="g_light_red">#FF9999</color>
+        <color name="g_card_background">#FAFDFF</color>
+        <color name="g_search_and_icons">#FAFBFC</color>
+        <color name="g_line">#E9EAEC</color>
+        <color name="g_blue100">#B8D9FA</color>
+        <color name="g_red">#FF0000</color>
+        <color name="g_gray500">#969899</color>
+        <color name="g_orange_yellow">#F8BA00</color>
+        <color name="g_green">#11FF00</color>
+
+
+        <!-- Grey Scale -->
+        <color name="grey_50">#FAFAFA</color>
+        <color name="grey_100">#F5F5F5</color>
+        <color name="grey_200">#EEEEEE</color>
+        <color name="grey_300">#E0E0E0</color>
+        <color name="grey_400">#BDBDBD</color>
+        <color name="grey_500">#9E9E9E</color>
+        <color name="grey_600">#757575</color>
+        <color name="grey_700">#616161</color>
+        <color name="grey_900">#212121</color>
+
+        <!-- Text Colors -->
+        <color name="textPrimary">#212121</color>
+        <color name="textSecondary">#757575</color>
+
+
+
+</resources>

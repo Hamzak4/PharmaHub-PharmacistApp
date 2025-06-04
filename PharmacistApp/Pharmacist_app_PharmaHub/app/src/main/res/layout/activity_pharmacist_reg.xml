@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blury_background"
+
+        android:scaleType="centerCrop"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="24dp">
+
+                <TextView
+                    android:id="@+id/tvAppName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/h3"
+                    android:layout_marginTop="50dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="PharmaHub."/>
+
+                <TextView
+                    android:id="@+id/tvLetsRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/h4"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvAppName"
+                    app:layout_constraintStart_toStartOf="@id/tvAppName"
+                    app:layout_constraintEnd_toEndOf="@id/tvAppName"
+                    android:text="Pharmacist Registration"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="28sp"/>
+
+                <!-- Personal Information Section -->
+
+                <TextView
+                    android:id="@+id/tvPersonalInfo"
+                    style="@style/h3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Personal Information"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintTop_toBottomOf="@id/tvLetsRegister" />
+
+                <EditText
+                    android:id="@+id/edFirstNameRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextHeight"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
+                    app:layout_constraintTop_toBottomOf="@id/tvPersonalInfo"
+                    style="@style/editText"
+                    android:hint="First Name"
+                    android:layout_marginTop="15dp"/>
+
+                <EditText
+                    android:id="@+id/edLastNameRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextHeight"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
+                    app:layout_constraintTop_toBottomOf="@id/edFirstNameRegister"
+                    style="@style/editText"
+                    android:hint="Last name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edEmailRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextHeight"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
+                    app:layout_constraintTop_toBottomOf="@id/edLastNameRegister"
+                    style="@style/editText"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edPasswordRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextHeight"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
+                    app:layout_constraintTop_toBottomOf="@id/edEmailRegister"
+                    style="@style/editText"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="10dp"/>
+
+                <!-- Pharmacy Information Section -->
+                <TextView
+                    android:id="@+id/tvPharmacyInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/h4"
+                    android:layout_marginTop="20dp"
+                    android:text="Pharmacy Information"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintTop_toBottomOf="@id/edPasswordRegister"/>
+
+                <EditText
+                    android:id="@+id/edPharmacyName"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextHeight"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
+                    app:layout_constraintTop_toBottomOf="@id/tvPharmacyInfo"
+                    style="@style/editText"
+                    android:hint="Pharmacy Name"
+                    android:layout_marginTop="15dp"/>
+
+                <EditText
+                    android:id="@+id/edLicenseNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextHeight"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
+                    app:layout_constraintTop_toBottomOf="@id/edPharmacyName"
+                    style="@style/editText"
+                    android:hint="License Number"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edPhoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextHeight"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
+                    app:layout_constraintTop_toBottomOf="@id/edLicenseNumber"
+                    style="@style/editText"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:layout_marginTop="10dp"/>
+
+                <!-- Location Section -->
+                <TextView
+                    android:id="@+id/tvLocationInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/h4"
+                    android:layout_marginTop="20dp"
+                    android:text="Location Information"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintTop_toBottomOf="@id/edPhoneNumber"/>
+
+                <EditText
+                    android:id="@+id/edAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextHeight"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
+                    app:layout_constraintTop_toBottomOf="@id/tvLocationInfo"
+                    style="@style/editText"
+                    android:hint="Street Address"
+                    android:layout_marginTop="15dp"/>
+
+                <EditText
+                    android:id="@+id/edCity"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextHeight"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
+                    app:layout_constraintTop_toBottomOf="@id/edAddress"
+                    style="@style/editText"
+                    android:hint="City"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edState"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextHeight"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
+                    app:layout_constraintTop_toBottomOf="@id/edCity"
+                    style="@style/editText"
+                    android:hint="State/Province"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edZipCode"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextHeight"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
+                    app:layout_constraintTop_toBottomOf="@id/edState"
+                    style="@style/editText"
+                    android:hint="Zip/Postal Code"
+                    android:inputType="number"
+                    android:layout_marginTop="10dp"/>
+
+                <com.github.leandroborgesferreira.loadingbutton.customViews.CircularProgressButton
+                    android:id="@+id/buttonRegisterRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/mediumButtonHeight"
+                    style="@style/blueButtonStyle"
+                    app:layout_constraintTop_toBottomOf="@id/edZipCode"
+                    app:layout_constraintStart_toStartOf="@id/guidelineRegisterLeft"
+                    app:layout_constraintEnd_toEndOf="@id/guidelineRegisterRight"
+                    android:layout_marginTop="25dp"
+                    android:text="Complete Registration"
+                    app:spinning_bar_color="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tvDoYouHaveAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/h2"
+                    app:layout_constraintStart_toStartOf="@id/buttonRegisterRegister"
+                    app:layout_constraintTop_toBottomOf="@id/buttonRegisterRegister"
+                    app:layout_constraintEnd_toEndOf="@id/buttonRegisterRegister"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="Already have an account? Log in"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineRegisterLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.08" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineRegisterRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.92" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

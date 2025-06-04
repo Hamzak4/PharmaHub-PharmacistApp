@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pharmacistApp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <application
+        android:name=".PharmacistApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/pharmacistlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PharmacistApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.pharmacist.DeliveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.pharmacist.ImageViewerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PharmacistApp" />
+        <activity
+            android:name=".activity.pharmacist.ReportsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.pharmacist.ProcessOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.pharmacist.CustomerSupportOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.pharmacist.UpdateMedicineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.pharmacist.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.pharmacist.ForgotPasswordActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:theme="@style/ForgotPasswordTheme" />
+        <activity
+            android:name=".activity.pharmacist.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.pharmacist.ProfileActivityPharmacist"
+            android:exported="false" />
+        <activity
+            android:name=".activity.pharmacist.PrescriptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.pharmacist.InventoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.pharmacist.OrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.ComplaintsManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.PharmacyApplicationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.UsersListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.PharmacistsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.pharmacist.PharmacistDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AccOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.pharmacist.PharmacistRegActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.pharmacist.PharmacistLoginActivty"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.admin.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.AdminLoginActivity"
+            android:exported="false" /> <!-- 🔥 Now the launcher activity -->
+        <activity
+            android:name=".activity.IntroductionActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PharmacistApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.pharmacist.AddMedicineActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>
